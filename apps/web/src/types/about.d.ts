@@ -36,6 +36,7 @@ interface TechStacks {
 export type About = {
   firstName: string;
   lastName: string;
+  fullName: string;
   middleName: string;
   preferredName: string;
   additionalName: string;

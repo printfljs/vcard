@@ -46,9 +46,9 @@ export const metadata: Metadata = {
   manifest: '/manifest.webmanifest',
   twitter: {
     card: "summary_large_image",
-    title: "Hugo ChunHo Lin (1chooo) | Open Source Enthusiast",
+    title: "Jiashu Liu",
     description:
-      "I'm Chun-Ho (Hugo) Lin, a graduate with a Bachelor's degree from National Central University (NCU) 🐿️, driven by a sincere passion for Software Engineering 💻.",
+      "I'm Jiashu Liu, a graduate with a Bachelor's degree from National Central University (NCU) 🐿️, driven by a sincere passion for Software Engineering 💻.",
     images: "https://docs.1chooo.com/images/cover-with-1chooo-com.png",
   },
   icons: {
@@ -122,18 +122,18 @@ async function About() {
       <PageHeader header={header} />
       <AboutHeader
         id="introduction"
-        text="$ ls -al Hugo 👨🏻‍💻 (He/Him)"
+        text="$ ls -al Jiashu"
       />
       <MarkdownRenderer
         className="text-light-gray leading-relaxed"
         content={introduction}
       />
       <DynamicLatestArticles posts={selectedPosts} />
-      <DynamicCodingStats
+      {/* <DynamicCodingStats
         techStacks={techStacks}
         githubUsername={githubUsername}
-      />
-      <DynamicLifeStyles lifestyles={lifestyles} />
+      /> */}
+      {/* <DynamicLifeStyles lifestyles={lifestyles} /> */}
     </article>
   );
 };

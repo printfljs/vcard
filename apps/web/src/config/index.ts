@@ -24,37 +24,36 @@ import {
 
 const config: Config = {
   avatar: '/images/profile.webp',
-  title: "Chun-Ho (Hugo) Lin - 1chooo | Open Source Enthusiast",
-  description: "I'm Chun-Ho (Hugo) Lin, a graduate with a Bachelor's degree from National Central University (NCU) 🐿️, driven by a sincere passion for Software Engineering 💻.",
-  author: "Chun-Ho (Hugo) Lin - 1chooo",
+  title: "Jiashu Liu | Software Developer",
+  description: "I'm Jiashu Liu, ",
+  author: "Jiashu Liu",
   keywords: [
-    "Hugo ChunHo Lin",
-    "1chooo",
+    "Jiashu Liu",
     "Software Engineering",
     "Next.js",
     "React",
   ],
-  status: "Day ONE ⚡️",
-  siteURL: "https://www.1chooo.com",
+  status: "💻Looking for Jobs🙋‍",
+  siteURL: "https://www.jiashuu.com",
   openGraph: {
-    url: "https://www.1chooo.com/",
+    url: "https://www.jiashuu.com/",
     type: "website",
-    siteName: "Chun-Ho (Hugo) Lin - 1chooo | Open Source Enthusiast",
-    title: "Chun-Ho (Hugo) Lin - 1chooo | Open Source Enthusiast",
-    description: "I'm Chun-Ho (Hugo) Lin, a graduate with a Bachelor's degree from National Central University (NCU) 🐿️, driven by a sincere passion for Software Engineering 💻.",
+    siteName: "Jiashu Liu",
+    title: "Jiashu Liu",
+    description: "I'm Jiashu Liu, ",
     images: [
       {
         url: "https://docs.1chooo.com/images/cover-with-1chooo-com.png",
         width: 1200,
         height: 630,
-        alt: "Chun-Ho (Hugo) Lin - 1chooo Cover Image",
+        alt: "Jiashu Liu - 1chooo Cover Image",
       },
     ],
   },
   navItems: [
     { path: '/', label: 'About' },
     { path: '/resume', label: 'Resume' },
-    { path: '/portfolio', label: 'Portfolio' },
+    // { path: '/portfolio', label: 'Portfolio' },
     { path: '/post', label: 'Post' },
     { path: '/gallery', label: 'Gallery' },
   ],
@@ -62,25 +61,25 @@ const config: Config = {
     {
       icon: LuMapPin,
       title: "Location",
-      content: "Taipei, Taiwan 🇹🇼",
+      content: "Helsinki, Finlandfi 🇫🇮",
     },
     {
       icon: LuMail,
       title: "Email",
-      link: "mailto:hugo970217@gmail.com",
-      content: "hugo970217@gmail.com",
+      link: "mailto:jiashuliu.js@gmail.com",
+      content: "jiashuliu.js@gmail.com",
     },
     // {
     //   icon: TbPhoneCalling,
     //   title: "Phone",
     //   content: "404 Not Found 📲",
     // },
-    {
-      icon: LuGithub,
-      title: "GitHub",
-      link: "https://github.com/1chooo",
-      content: "1chooo",
-    },
+    // {
+    //   icon: LuGithub,
+    //   title: "GitHub",
+    //   link: "https://github.com/1chooo",
+    //   content: "1chooo",
+    // },
     // {
     //   icon: IoCalendarOutline,
     //   title: "Birthday",
@@ -89,35 +88,29 @@ const config: Config = {
     {
       icon: LuLinkedin,
       title: "LinkedIn",
-      link: "https://www.linkedin.com/in/1chooo/",
-      content: "Chun-Ho (Hugo) Lin",
+      link: "https://www.linkedin.com/in/jiashu-liu/",
+      content: "jiashu-liu",
     },
   ],
   socialLinks: [
-    { url: `https://github.com/1chooo`, icon: LuGithub, name: 'GitHub' },
+    // { url: `https://github.com/1chooo`, icon: LuGithub, name: 'GitHub' },
     { url: `https://www.linkedin.com/in/1chooo/`, icon: LuLinkedin, name: 'LinkedIn' },
-    { url: `https://medium.com/@1chooo`, icon: PiMediumLogoBold, name: 'Medium' },
-    { url: `https://twitter.com/1chooo___`, icon: FaXTwitter, name: 'Twitter' },
-    { url: `/rss.xml`, icon: LuRss, name: 'RSS Feed' },
+    // { url: `https://medium.com/@1chooo`, icon: PiMediumLogoBold, name: 'Medium' },
+    // { url: `https://twitter.com/1chooo___`, icon: FaXTwitter, name: 'Twitter' },
+    // { url: `/rss.xml`, icon: LuRss, name: 'RSS Feed' },
     { url: `/cv.pdf`, icon: MdAttachment, name: 'CV' },
   ],
   about: {
-    "firstName": 'Chun-Ho',
-    "lastName": 'Lin',
+    "firstName": 'Jiashu',
+    "lastName": 'Liu',
+    "fullName": 'Jiashu Liu',
     "middleName": "",
-    "preferredName": "Hugo",
-    "additionalName": "Hugo",
-    "pronouns": 'He/Him',
-    "githubUsername": "1chooo",
+    "preferredName": "",
+    "additionalName": "",
+    "pronouns": 'She/Her',
+    "githubUsername": "printfljs",
     "introduction": `
-I obtained my Bachelor's degree from [National Central University 🐿️](https://www.ncu.edu.tw/), driven by a *sincere passion* for **Software Engineering 💻.**
-
-Software is built by humans. Unfortunately, humans make errors, <mark class="text-orange-yellow-crayola bg-transparent"><b>LOTS of ERRORS.</b></mark> Throughout human history, humans have learned to craft machines and tools to help us construct complex architecture. Inspired by this, I explore practical methodologies and tools to improve large-scale software systems' quality, reliability, and efficiency.
-
-In my spare time, I focus on contributing to open-source projects, alongside working out 💪🏻, capturing street photography 📸, and writing tech content ✍🏻.
-
-**Self-motivated, Team player, Love coding 👨🏻‍💻**
-    `,
+`,
     "lifestyles": [
       {
         icon: LuGithub,

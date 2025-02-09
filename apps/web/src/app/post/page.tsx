@@ -129,7 +129,7 @@ export default function Post(
 ) {
   return (
     <article>
-      <PageHeader header="Hugo's Blog" />
+      <PageHeader header="Shu's Blog" />
       <Suspense fallback={<Loading />}>
         <BlogPosts searchParams={searchParams} />
       </Suspense>

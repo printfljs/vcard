@@ -40,7 +40,7 @@ export async function generateMetadata(
     description,
     openGraph: {
       title,
-      siteName: 'Chun-Ho (Hugo) Lin - 1chooo | Open Source Enthusiast',
+      siteName: 'Jiashu Liu - 1chooo | Open Source Enthusiast',
       description,
       type: 'article',
       publishedTime,
@@ -124,7 +124,7 @@ export default async function Post(props: { params: tParams }) {
         <section className="blog-text">
           <header>
             <h1 className="relative pb-[7px] mb-[30px] font-semibold text-3xl text-light-gray after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-[30px] after:h-[3px] after:rounded-sm  after:bg-text-gradient-yellow sm:pb-[15px] sm:after:w-[40px] sm:after:h-[5px] md:pb-[20px]">
-              {"Hugo's Blog"}
+              {"Shu's Blog"}
             </h1>
           </header>
           <h1 className="font-semibold text-4xl text-white-2 max-w-[650px]">
