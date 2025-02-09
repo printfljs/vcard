@@ -18,8 +18,76 @@
     "post": "文章",
     "gallery": "相册"
   },
-  "resume":{
-    "title": "简历"
-  }
+  
+    "resume": {
+      "title": "家舒的简历",
+      "educations": {
+        "title": "教育背景",
+        "items": [
+          {
+            "company": "赫尔辛基大学",
+            "location": "芬兰，赫尔辛基",
+            "role": "计算机科学硕士（网络方向）",
+            "duration": "2023年9月 — 2025年6月",
+            "tasksMarkdown": "全额奖学金\n- **核心课程:** 网络协议分析、物联网数据科学、网络AI系统、计算机视觉、边缘智能与LLM"
+          },
+          {
+            "company": "吉林大学",
+            "location": "吉林，长春",
+            "role": "计算机科学学士",
+            "duration": "2015年9月 — 2019年6月",
+            "tasksMarkdown": ""
+          }
+        ]
+      },
+      "professionalExperiences": {
+        "title": "工作经验",
+        "items": [
+          {
+            "company": "Eficode, Fuji Team",
+            "location": "芬兰赫尔辛基",
+            "role": "全栈开发实习生",
+            "duration": "2024年4月 - 2024年9月",
+            "tasksMarkdown": "- 使用Puppeteer和BullMQ开发和维护了一个网页可访问性监控项目，用于网页抓取和任务处理。\n- 设计并实现了Kubernetes中的WebSocket服务器部署，支持分布式扩展，处理超时重连和后端服务认证。\n- 使用Pulumi进行基础设施即代码（IaC），自动化Azure资源供应和扩展，确保高可用性和弹性。\n- 掌握了WCAG（网页内容可访问性指南）合规性，实施并测试了WCAG 2规则。"
+          },
+          {
+            "company": "浪潮, 医疗数据平台部门",
+            "location": "中国济南",
+            "role": "软件工程师",
+            "duration": "2021年8月 - 2023年6月",
+            "tasksMarkdown": "- 开发了关键业务接口，包括接触追踪报告提交和场所码扫描，使用Kafka进行负载均衡以确保系统稳定性。\n- 通过水平分区、读写分离和冷热数据分离优化了场所码系统的性能。\n- 开发了微信小程序和公众号前端，实现了登录、扫描和缓存机制，以提高性能。"
+          }
+        ]
+      },
+      "projectExperiences": {
+        "title": "项目经验",
+        "items": [
+          {
+            "company": "Laundry Bot - 智能洗衣预订系统",
+            "location": "",
+            "role": "受公寓需求启发，构思、设计并开发了整个系统，用户采用率达80%，活跃参与率达30%",
+            "duration": "",
+            "tasksMarkdown": "- 使用AWS Lambda、Apify和CockroachDB设计和实现了无服务器洗衣预订自动化系统，用于数据收集、存储和管理。\n- 集成OpenAI API实现自然语言交互，用户可以通过Telegram机器人预订、查询和管理预订。\n- 利用AWS EventBridge进行自动预订处理，S3用于原始数据存储，实现了多级通知系统。"
+          },
+          {
+            "company": "Edge-LLM - 边缘LLM驱动的网络自适应优化系统",
+            "location": "",
+            "role": "从课程黑客马拉松扩展开发",
+            "duration": "",
+            "tasksMarkdown": "- 使用边缘设备开发了自适应分布式网络系统，集成了联邦学习和流量优化策略，以提高通信效率。\n- 使用TensorFlow Lite和MQTT进行低功耗边缘模型训练和高效设备通信。\n- 部署了轻量级LLM，使用LlamaFile分析流量数据并动态优化超参数，以提高训练效率。"
+          }
+        ]
+      },
+      "skills": {
+        "title": "技能",
+        "items": [
+          {
+            "company": "开发技术栈",
+            "tasksMarkdown": "- **后端:** Java, Python, Node.js, Spring Boot, Express\n- **前端:** TypeScript, JavaScript, React, Next.js, Vue.js, Tailwind CSS\n- **工具:** Git, GitHub Actions, Bitbucket, Jenkins\n- **云与容器化:** Docker, Kubernetes, AWS, Azure (Azure Developer Associate Certified)"
+          }
+        ]
+      }
+    }
+  
 
 }

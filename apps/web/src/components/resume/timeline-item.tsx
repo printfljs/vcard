@@ -25,16 +25,16 @@ function TimelineItem({
   return (
     <li className="timeline-item">
       <h4 className="text-white-2 font-bold leading-[1.3] mb-2">
-        {company}
-        {location && (<span>📍 {location}</span>)}
+        {t(company)}
+        {location && (<span>📍 {t(location)}</span>)}
       </h4>
       <p className="text-orange-yellow-crayola inline">
-        {role}
-        {duration && (<span className="text-white-1 float-right">🗓️ {duration}</span>)}
+        {t(role)}
+        {duration && (<span className="text-white-1 float-right">🗓️ {t(duration)}</span>)}
       </p>
-      <br />
+      <div className="mb-2" />
       <div className="timeline-text">
-        <MarkdownRenderer content={tasksMarkdown} />
+        <MarkdownRenderer content={t(tasksMarkdown)} />
       </div>
     </li>
   );

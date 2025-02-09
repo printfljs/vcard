@@ -18,7 +18,75 @@
       "post": "Post",
       "gallery": "Gallery"
     },
-    "resume":{
-      "title": "Shu's Resume"
-    }
+    
+      "resume": {
+        "title": "Shu's Resume",
+        "educations": {
+          "title": "Education",
+          "items": [
+            {
+              "company": "University of Helsinki",
+              "location": "Helsinki, Finland",
+              "role": "Master of Science in Computer Science (Networking)",
+              "duration": "Sep. 2023 — Jun. 2025",
+              "tasksMarkdown": "Full Scholarship Recipient\n- **Key Courses:** Network Protocol Analysis, IoT Data Science, Network AI Systems, Computer Vision, Edge Intelligence & LLM"
+            },
+            {
+              "company": "Jilin University",
+              "location": "Changchun, China",
+              "role": "Bachelor of Science in Computer Science",
+              "duration": "Sep. 2015 — Jun. 2019",
+              "tasksMarkdown": ""
+            }
+          ]
+        },
+        "professionalExperiences": {
+          "title": "Professional Experience",
+          "items": [
+            {
+              "company": "Eficode, Fuji Team",
+              "location": "Helsinki, Finland",
+              "role": "Full Stack Developer Intern",
+              "duration": "Apr. 2024 - Sep. 2024",
+              "tasksMarkdown": "- Developed and maintained a web accessibility monitoring project using Puppeteer and BullMQ for web scraping and task processing.\n- Designed and implemented WebSocket server deployment with distributed scaling in Kubernetes, handling timeout reconnections and backend service authentication.\n- Used Pulumi for Infrastructure as Code (IaC) to automate Azure resource provisioning and scaling, ensuring high availability and elasticity.\n- Gained expertise in WCAG (Web Content Accessibility Guidelines) compliance, implementing and testing WCAG 2 rules."
+            },
+            {
+              "company": "Inspur, Medical Data Platform Department",
+              "location": "Jinan, China",
+              "role": "Software Engineer",
+              "duration": "Aug. 2021 - Jun. 2023",
+              "tasksMarkdown": "- Developed key business interfaces, including contact tracing report submission and venue code scanning, using Kafka for load balancing to ensure system stability.\n- Optimized venue code system performance through horizontal partitioning, read-write separation, and cold-hot data separation.\n- Developed WeChat Mini Program and public account frontend, implementing login, scanning, and caching mechanisms for improved performance."
+            }
+          ]
+        },
+        "projectExperiences": {
+          "title": "Projects",
+          "items": [
+            {
+              "company": "Laundry Bot - Smart Laundry Booking System",
+              "location": "",
+              "role": "Inspired by the apartment's needs, I conceived, designed, and developed the entire system, with 80% user adoption and 30% active engagement",
+              "duration": "",
+              "tasksMarkdown": "- Designed and implemented a serverless laundry booking automation system using AWS Lambda, Apify, and CockroachDB for data collection, storage, and management.\n- Integrated OpenAI API for natural language interactions, enabling users to book, query, and manage reservations via a Telegram bot.\n- Leveraged AWS EventBridge for automated booking handling and S3 for raw data storage, implementing a multi-level notification system."
+            },
+            {
+              "company": "Edge-LLM - Edge LLM-driven Network Adaptive Optimization System",
+              "location": "",
+              "role": "Extended development from a course hackathon",
+              "duration": "",
+              "tasksMarkdown": "- Developed an adaptive distributed network system using edge devices, integrating federated learning and traffic optimization strategies to enhance communication efficiency.\n- Utilized TensorFlow Lite and MQTT for low-power edge model training and high-efficiency device communication.\n- Deployed lightweight LLM with LlamaFile to analyze traffic data and dynamically optimize hyperparameters for improved training efficiency."
+            }
+          ]
+        },
+        "skills": {
+          "title": "Skills",
+          "items": [
+            {
+              "company": "Development Tech Stack",
+              "tasksMarkdown": "- **Backend:** Java, Python, Node.js, Spring Boot, Express\n- **Frontend:** TypeScript, JavaScript, React, Next.js, Vue.js, Tailwind CSS\n- **Tools:** Git, GitHub Actions, Bitbucket, Jenkins\n- **Cloud & Containerization:** Docker, Kubernetes, AWS, Azure (Azure Developer Associate Certified)"
+            }
+          ]
+        }
+      }
+    
   }

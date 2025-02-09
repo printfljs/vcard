@@ -163,104 +163,78 @@ const config: Config = {
     }
   },
   resume: {
-      "educations": {
-        "icon": IoSchoolOutline,
-        "title": "Education",
-        "items": [
-          {
-            "company": "University of Helsinki",
-            "location": "Helsinki, Finland",
-            "role": "Master of Science in Computer Science (Networking)",
-            "duration": "Sep. 2023 — Jun. 2025",
-            tasksMarkdown: `
-___Full Scholarship Recipient___
-
-- **Key Courses:** Network Protocol Analysis, IoT Data Science, Network AI Systems, Computer Vision, Edge Intelligence & LLM
-            `
-          },
-          {
-            "company": "Jilin University",
-            "location": "Changchun, China",
-            "role": "Bachelor of Science in Computer Science",
-            "duration": "Sep. 2015 — Jun. 2019",
-            "tasksMarkdown": ``
-          }
-        ]
-      },
-      "professionalExperiences": {
-        "icon": MdOutlineDevices,
-        "title": "Professional Experience",
-        "items": [
-          {
-            "company": "Eficode, Fuji Team",
-            "location": "Helsinki, Finland",
-            "role": "Full Stack Developer Intern",
-            "duration": "Apr. 2024 - Sep. 2024",
-            tasksMarkdown: `
-- Developed and maintained a web accessibility monitoring project using Puppeteer and BullMQ for web scraping and task processing.
-- Designed and implemented WebSocket server deployment with distributed scaling in Kubernetes, handling timeout reconnections and backend service authentication.
-- Used Pulumi for Infrastructure as Code (IaC) to automate Azure resource provisioning and scaling, ensuring high availability and elasticity.
-- Gained expertise in WCAG (Web Content Accessibility Guidelines) compliance, implementing and testing WCAG 2 rules.
-            `
-          },
-          {
-            "company": "Inspur, Medical Data Platform Department",
-            "location": "Jinan, China",
-            "role": "Software Engineer",
-            "duration": "Aug. 2021 - Jun. 2023",
-            "tasksMarkdown": `
-- Developed key business interfaces, including contact tracing report submission and venue code scanning, using Kafka for load balancing to ensure system stability.
-- Optimized venue code system performance through horizontal partitioning, read-write separation, and cold-hot data separation.
-- Developed WeChat Mini Program and public account frontend, implementing login, scanning, and caching mechanisms for improved performance.
-            `
-          }
-        ]
-      },
-      "projectExperiences": {
-        "icon": PiTrophy,
-        "title": "Projects",
-        "items": [
-          {
-            "company": "Laundry Bot - Smart Laundry Booking System",
-            "location": "",
-            "role": "Inspired by the apartment's needs, I conceived, designed, and developed the entire system, with 80% user adoption and 30% active engagement",
-            "duration": "",
-            "tasksMarkdown": `
-- Designed and implemented a serverless laundry booking automation system using AWS Lambda, Apify, and CockroachDB for data collection, storage, and management.
-- Integrated OpenAI API for natural language interactions, enabling users to book, query, and manage reservations via a Telegram bot.
-- Leveraged AWS EventBridge for automated booking handling and S3 for raw data storage, implementing a multi-level notification system.
-            `
-          },
-          {
-            "company": "Edge-LLM - Edge LLM-driven Network Adaptive Optimization System",
-            "location": "",
-            "role": "Extended development from a course hackathon",
-            "duration": "",
-            "tasksMarkdown": `
-- Developed an adaptive distributed network system using edge devices, integrating federated learning and traffic optimization strategies to enhance communication efficiency.
-- Utilized TensorFlow Lite and MQTT for low-power edge model training and high-efficiency device communication.
-- Deployed lightweight LLM with LlamaFile to analyze traffic data and dynamically optimize hyperparameters for improved training efficiency.
-            `
-          }
-        ]
-      },
-      "skills": {
-        "icon": PiBooks,
-        "title": "Skills",
-        "items": [
-          {
-            "company": "Development Tech Stack",
-            "tasksMarkdown": `
-- **Backend:** Java, Python, Node.js, Spring Boot, Express
-- **Frontend:** TypeScript, JavaScript, React, Next.js, Vue.js, Tailwind CSS
-- **Tools:** Git, GitHub Actions, Bitbucket, Jenkins
-- **Cloud & Containerization:** Docker, Kubernetes, AWS, Azure (Azure Developer Associate Certified)
-        `
-          }
-        ]
-      }
+    educations: {
+      icon: IoSchoolOutline,
+      title: "resume.educations.title",
+      items: [
+        {
+          company: "resume.educations.items.0.company",
+          location: "resume.educations.items.0.location",
+          role: "resume.educations.items.0.role",
+          duration: "resume.educations.items.0.duration",
+          tasksMarkdown: "resume.educations.items.0.tasksMarkdown"
+        },
+        {
+          company: "resume.educations.items.1.company",
+          location: "resume.educations.items.1.location",
+          role: "resume.educations.items.1.role",
+          duration: "resume.educations.items.1.duration",
+          tasksMarkdown: "resume.educations.items.1.tasksMarkdown"
+        }
+      ]
+    },
+    professionalExperiences: {
+      icon: MdOutlineDevices,
+      title: "resume.professionalExperiences.title",
+      items: [
+        {
+          company: "resume.professionalExperiences.items.0.company",
+          location: "resume.professionalExperiences.items.0.location",
+          role: "resume.professionalExperiences.items.0.role",
+          duration: "resume.professionalExperiences.items.0.duration",
+          tasksMarkdown: "resume.professionalExperiences.items.0.tasksMarkdown"
+        },
+        {
+          company: "resume.professionalExperiences.items.1.company",
+          location: "resume.professionalExperiences.items.1.location",
+          role: "resume.professionalExperiences.items.1.role",
+          duration: "resume.professionalExperiences.items.1.duration",
+          tasksMarkdown: "resume.professionalExperiences.items.1.tasksMarkdown"
+        }
+      ]
+    },
+    projectExperiences: {
+      icon: PiTrophy,
+      title: "resume.projectExperiences.title",
+      items: [
+        {
+          company: "resume.projectExperiences.items.0.company",
+          location: "resume.projectExperiences.items.0.location",
+          role: "resume.projectExperiences.items.0.role",
+          duration: "resume.projectExperiences.items.0.duration",
+          tasksMarkdown: "resume.projectExperiences.items.0.tasksMarkdown"
+        },
+        {
+          company: "resume.projectExperiences.items.1.company",
+          location: "resume.projectExperiences.items.1.location",
+          role: "resume.projectExperiences.items.1.role",
+          duration: "resume.projectExperiences.items.1.duration",
+          tasksMarkdown: "resume.projectExperiences.items.1.tasksMarkdown"
+        }
+      ]
+    },
+    skills: {
+      icon: PiBooks,
+      title: "resume.skills.title",
+      items: [
+        {
+          company: "resume.skills.items.0.company",
+          tasksMarkdown: "resume.skills.items.0.tasksMarkdown"
+        }
+      ]
+    }
   },
-  "giscusConfig": {
+  giscusConfig: {
     id: "comments",
     repo: "1chooo/1chooo.com",
     repoId: process.env.NEXT_PUBLIC_GISCUS_REPO_ID || '',
@@ -275,8 +249,8 @@ ___Full Scholarship Recipient___
     lang: "en",
     loading: "lazy",
   },
-  "googleAnalyticId": process.env.NEXT_PUBLIC_GA_ID || '',
-  "googleTagManagerId": process.env.NEXT_PUBLIC_GTM_ID || '',
+  googleAnalyticId: process.env.NEXT_PUBLIC_GA_ID || '',
+  googleTagManagerId: process.env.NEXT_PUBLIC_GTM_ID || '',
 };
 
 export default config;
