@@ -7,9 +7,9 @@ import {useTranslations} from 'next-intl';
 
 export interface TimelineItemProps {
   company: string;
-  location: string;
-  role: string;
-  duration: string;
+  location?: string; 
+  role?: string; 
+  duration?: string;
   tasksMarkdown: string;
 }
 
