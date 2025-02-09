@@ -11,18 +11,24 @@ function DownloadCV() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <AnimatedGradientText>
-          📑 <hr className="mx-2 h-4 w-px shrink-0 bg-gray-300" />{" "}
-          <span
-            className={cn(
-              `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
-            )}
-          >
-            Download Hugo's full CV
-          </span>
+        {/* <AnimatedGradientText> */}
+        <span
+  className={cn(
+    `rounded-full px-6 py-2 text-[hsl(45,10%,60%)] bg-[hsl(45,100%,72%)] transition-all duration-300 text-gray-600
+     hover:bg-gradient-to-r hover:from-[hsl(45,100%,80%)] hover:to-[hsl(45,100%,65%)] 
+     hover:shadow-lg`
+  )}
+>
+  Download Shu's full CV 📥
+</span>
 
-          <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5 text-white-1" />
-        </AnimatedGradientText>
+
+
+
+
+
+
+        {/* </AnimatedGradientText> */}
       </Link>
     </div>
   );

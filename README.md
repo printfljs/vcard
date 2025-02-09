@@ -86,9 +86,9 @@ $ pnpm run dev   # Open http://localhost:3001 with your browser to see the resul
 > **Hugo ChunHo Lin**
 > 
 > <aside>
->   📩 E-mail: <a href="mailto:hugo970217@gmail.com">hugo970217@gmail.com</a>
+>   📩 E-mail: <a href="mailto:jiashuliu.js@gmail.com">jiashuliu.js@gmail.com</a>
 > <br>
->   🧳 Linkedin: <a href="https://www.linkedin.com/in/1chooo/">Hugo ChunHo Lin</a>
+>   🧳 Linkedin: <a href="https://www.linkedin.com/in/jiashu-liu/">Hugo ChunHo Lin</a>
 > <br>
 >   👨🏻‍💻 GitHub: <a href="https://github.com/1chooo">1chooo</a>
 >    

@@ -3,6 +3,22 @@
       "title": "Hello world!"
     },
     "contact": {
-      "fullname": "Jiashu Liu"
+      "fullname": "Jiashu Liu",
+      "status": "💻Looking for Jobs🙋",
+      "location": "Helsinki, Finland 🇫🇮",
+      "email-link": "mailto:jiashuliu.js@gmail.com",
+      "email": "jiashuliu.js@gmail.com",
+      "linkedin-link": "https://www.linkedin.com/in/jiashuliu/",
+      "linkedin": "jiashu-liu",
+      "introduction": "Hi there! I'm **Jiashu Liu**, currently pursuing my master's degree at the **University of Helsinki** in Finland. I have a deep passion for software development and how technology can enhance everyday life. <br /><br />My primary programming languages are **Python** and **JavaScript/TypeScript**, also use **Java** when needed. My work experience has given me a strong interest in **cloud platforms** and the **XaaS (Everything as a Service) ecosystem**. I always strive to stay up to date with emerging technologies—lately, I’ve been exploring ways to seamlessly integrate **LLMs** into daily life.<br /><br />Beyond coding, I love exploring beauty in all forms. I enjoy **handicrafts 🛠️**, **interior design 🏠**, **light art 💡**, and **photography 📷**. Creativity 🎨 fuels me just as much as technology does!😊"
+    },
+    "navbar": {
+      "about": "About",
+      "resume": "Resume",
+      "post": "Post",
+      "gallery": "Gallery"
+    },
+    "resume":{
+      "title": "Shu's Resume"
     }
   }

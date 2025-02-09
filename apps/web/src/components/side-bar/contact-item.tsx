@@ -4,6 +4,8 @@ import Link from "next/link";
 import type { Contact } from "@/types/config";
 
 import "@/styles/side-bar/contact-info.css";
+import {useTranslations} from 'next-intl';
+
 
 interface ContactItemProps {
   contact: Contact;
@@ -11,19 +13,21 @@ interface ContactItemProps {
 
 function ContactItem({ contact }: ContactItemProps) {
   const { icon: Icon, title, content, link } = contact;
+  const t = useTranslations();
+  
   const ContentElement = link ? (
     <Link
-      href={link}
+      href={t(link)}
       className="block text-white-2 text-sm font-light truncate hover:text-orange-yellow-crayola
       transition-colors"
       target="_blank"
       rel="noopener noreferrer"
     >
-      {content}
+      {t(content)}
     </Link>
   ) : (
     <span className="block text-white-2 text-sm font-light truncate">
-      {content}
+      {t(content)}
     </span>
   );
 

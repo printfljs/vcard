@@ -49,9 +49,16 @@
 
 @media (min-width: 768px) {
     .navbar-link {
-        --fs-8: 15px;
+        --fs-8: 16px;
     }
 }
+
+@media (max-width: 580px) {
+    .navbar-link {
+        --fs-8: 14px;
+    }
+}
+
 
 @media (min-width: 1024px) {
     .navbar {

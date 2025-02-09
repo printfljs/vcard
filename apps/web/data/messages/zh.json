@@ -3,6 +3,23 @@
     "title": "Hello world!"
   },
   "contact": {
-    "fullname": "刘家舒"
+    "fullname": "刘家舒",
+    "status": "💻求职中🙋",
+    "location": "芬兰，赫尔辛基",
+    "email-link": "mailto:liujs2019@163.com",
+    "email": "liujs2019@163.com",
+    "linkedin-link": "https://www.linkedin.com/in/jiashuliu/",
+    "linkedin": "jiashu-liu",
+    "introduction": "你好！我是 **刘家舒**，目前在 **芬兰赫尔辛基大学** 攻读硕士学位。我对软件开发充满热情，并且热衷于探索技术如何改善日常生活。<br /><br />我的主要编程语言是 **Python** 和 **JavaScript/TypeScript**，同时也会在需要时使用 **Java**。我的工作经验让我对 **云平台** 和 **XaaS（Everything as a Service，一切即服务）** 生态系统非常感兴趣。我始终保持对新技术的关注，最近正在探索如何让 **LLMs（大语言模型）** 无缝融入日常生活。<br /><br />除了编码，我也热爱探索各种形式的美。我喜欢 **手工制作 🛠️**、**室内设计 🏠**、**光影艺术 💡** 和 **摄影 📷**。**创造力 🎨 对我来说和技术一样重要！😊**"
+  },
+  "navbar": {
+    "about": "关于",
+    "resume": "简历",
+    "post": "文章",
+    "gallery": "相册"
+  },
+  "resume":{
+    "title": "简历"
   }
+
 }

@@ -1,11 +1,12 @@
 import BlurFade from "@/components/magicui/blur-fade";
 
-const images = Array.from({ length: 9 }, (_, i) => {
+const images = Array.from({ length: 11 }, (_, i) => {
   const isLandscape = i % 2 === 0;
   const width = isLandscape ? 800 : 600;
   const height = isLandscape ? 600 : 800;
-  return `https://picsum.photos/seed/${i + 1}/${width}/${height}`;
+  return `/images/gallery/${i + 1}.jpg`;
 });
+
 
 export function BlurFadeDemo() {
   return (

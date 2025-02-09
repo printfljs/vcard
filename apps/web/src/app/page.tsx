@@ -6,6 +6,7 @@ import AboutHeader from '@/components/about/about-header';
 import MarkdownRenderer from "@/components/markdown/markdown-renderer";
 import { getBlogPosts } from "@/lib/db/v1/post";
 import config from '@/config';
+import { getTranslations } from 'next-intl/server';
 
 const DynamicLatestArticles = dynamic(() => import('@/components/about/latest-articles'), {
   loading: () => <p>Loading latest articles...</p>,
@@ -88,7 +89,7 @@ const addJsonLd = () => {
       "image": "https://www.1chooo.com/images/profile.webp",
       "url": ${siteURL},
       "sameAs": [
-        "https://www.linkedin.com/in/1chooo/",
+        "https://www.linkedin.com/in/jiashu-liu/",
         "http://github.com/1chooo",
         "https://medium.com/@1chooo",
       ]
@@ -99,7 +100,8 @@ const addJsonLd = () => {
 
 async function About() {
   let allBlogs = await getBlogPosts();
-
+  const t = await getTranslations();
+  
   let selectedPosts = allBlogs.map((post: any) => ({
     ...post,
     metadata: {
@@ -108,8 +110,7 @@ async function About() {
     },
   }));
 
-  let header = preferredName ?
-    `About ${preferredName} 👨🏻‍💻` : `About ${firstName} ${lastName} 👨🏻‍💻`;
+  let header = `About ${t(about.fullName)} 👩‍💻`;
 
   return (
     <article>
@@ -122,11 +123,11 @@ async function About() {
       <PageHeader header={header} />
       <AboutHeader
         id="introduction"
-        text="$ ls -al Jiashu"
+        text="$ ls -al Jiashu🐱"
       />
       <MarkdownRenderer
         className="text-light-gray leading-relaxed"
-        content={introduction}
+        content={t(introduction)}
       />
       <DynamicLatestArticles posts={selectedPosts} />
       {/* <DynamicCodingStats

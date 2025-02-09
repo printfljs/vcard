@@ -47,10 +47,10 @@ export const metadata: Metadata = {
   manifest: '/manifest.webmanifest',
   twitter: {
     card: "summary_large_image",
-    title: "Hugo ChunHo Lin (1chooo) | Open Source Enthusiast",
+    title: "",
     description:
-      "I'm Jiashu Liu, a graduate with a Bachelor's degree from National Central University (NCU) 🐿️, driven by a sincere passion for Software Engineering 💻.",
-    images: "https://docs.1chooo.com/images/cover-with-1chooo-com.png",
+      "",
+    images: "",
   },
   icons: {
     icon: '/favicon.ico',
@@ -73,8 +73,6 @@ async function RootLayout({
 
   const locale = await getLocale();
   const messages = await getMessages();
-  console.log('messages:', messages);
-  console.log('locale:', locale);
 
   return (
     <html lang={locale} className={`${roboto.className}`}>

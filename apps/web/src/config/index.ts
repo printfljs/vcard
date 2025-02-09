@@ -25,7 +25,7 @@ import {
 const config: Config = {
   avatar: '/images/profile.webp',
   title: "Jiashu Liu | Software Developer",
-  description: "I'm Jiashu Liu, ",
+  description: "",
   author: "Jiashu Liu",
   keywords: [
     "Jiashu Liu",
@@ -33,41 +33,41 @@ const config: Config = {
     "Next.js",
     "React",
   ],
-  status: "💻Looking for Jobs🙋‍",
+  status: "contact.status",
   siteURL: "https://www.jiashuu.com",
   openGraph: {
     url: "https://www.jiashuu.com/",
     type: "website",
     siteName: "Jiashu Liu",
     title: "Jiashu Liu",
-    description: "I'm Jiashu Liu, ",
+    description: "",
     images: [
       {
         url: "https://docs.1chooo.com/images/cover-with-1chooo-com.png",
         width: 1200,
         height: 630,
-        alt: "Jiashu Liu - 1chooo Cover Image",
+        alt: "Jiashu Liu",
       },
     ],
   },
   navItems: [
-    { path: '/', label: 'About' },
-    { path: '/resume', label: 'Resume' },
+    { path: '/', label: 'navbar.about' },
+    { path: '/resume', label: 'navbar.resume' },
     // { path: '/portfolio', label: 'Portfolio' },
-    { path: '/post', label: 'Post' },
-    { path: '/gallery', label: 'Gallery' },
+    { path: '/post', label: 'navbar.post' },
+    { path: '/gallery', label: 'navbar.gallery' },
   ],
   contacts: [
     {
       icon: LuMapPin,
       title: "Location",
-      content: "Helsinki, Finlandfi 🇫🇮",
+      content: "contact.location",
     },
     {
       icon: LuMail,
       title: "Email",
-      link: "mailto:jiashuliu.js@gmail.com",
-      content: "jiashuliu.js@gmail.com",
+      link: "contact.email-link",
+      content: "contact.email",
     },
     // {
     //   icon: TbPhoneCalling,
@@ -88,13 +88,13 @@ const config: Config = {
     {
       icon: LuLinkedin,
       title: "LinkedIn",
-      link: "https://www.linkedin.com/in/jiashu-liu/",
-      content: "jiashu-liu",
+      link: "contact.linkedin-link",
+      content: "contact.linkedin",
     },
   ],
   socialLinks: [
     // { url: `https://github.com/1chooo`, icon: LuGithub, name: 'GitHub' },
-    { url: `https://www.linkedin.com/in/1chooo/`, icon: LuLinkedin, name: 'LinkedIn' },
+    { url: `https://www.linkedin.com/in/jiashu-liu/`, icon: LuLinkedin, name: 'LinkedIn' },
     // { url: `https://medium.com/@1chooo`, icon: PiMediumLogoBold, name: 'Medium' },
     // { url: `https://twitter.com/1chooo___`, icon: FaXTwitter, name: 'Twitter' },
     // { url: `/rss.xml`, icon: LuRss, name: 'RSS Feed' },
@@ -103,14 +103,13 @@ const config: Config = {
   about: {
     "firstName": 'Jiashu',
     "lastName": 'Liu',
-    "fullName": 'Jiashu Liu',
+    "fullName": 'contact.fullname',
     "middleName": "",
     "preferredName": "",
     "additionalName": "",
     "pronouns": 'She/Her',
     "githubUsername": "printfljs",
-    "introduction": `
-`,
+    "introduction": "contact.introduction",
     "lifestyles": [
       {
         icon: LuGithub,
@@ -164,109 +163,102 @@ const config: Config = {
     }
   },
   resume: {
-    "educations": {
-      "icon": IoSchoolOutline,
-      "title": "Education",
-      "items": [
-        {
-          company: "National Central University",
-          location: "Taoyuan, Taiwan",
-          role: "Bachelors of Science in Atmospheric Science",
-          duration: "Sep. 2020 — Jun. 2024",
-          tasksMarkdown: `
-- **Minor Specialty:** Computer Science & Information Engineering
-- **Graduate-level Courses:** The Attack and Defense of Computers, Object-Oriented Analysis and Design.
-- **B.S.-level Courses:** Software Engineering, Principles of Programming Languages, Assembly Language and System Programming, Operating System, Computer Network, Algorithmics, Data Structures, Digital Design, Numerical Analysis
-- TA: Linux and Edge Computing, Programming Python, Weather and Artificial Intelligence, Freshman English, Student Service-Learning
-        `,
-        },
-      ],
-    },
-    "awardLeaderships": {
-      "icon": PiTrophy,
-      "title": "Award & Leaderships",
-      "items": [
-        {
-          company: "2023 Weather Hackathon",
-          location: "Taipei, Taiwan",
-          role: "Team Leader, Full Stack Developer",
-          duration: "May, 2023 - Aug, 2023",
-          tasksMarkdown: `
-- The second place winner, as well as the Executive Yuan Sustainability Special Award 
-<sup>[[News](https://www.weatherrisk.com/post/%E7%AC%AC%E4%BA%8C%E5%B1%86-%E5%A4%A9%E6%B0%A3%E9%BB%91%E5%AE%A2%E6%9D%BE-%E5%9C%93%E6%BB%BF%E6%88%90%E5%8A%9F%EF%BC%8Cesg%E3%80%81%E6%B0%B8%E7%BA%8C%E8%AD%B0%E9%A1%8C%E5%8F%97%E8%A9%95%E5%AF%A9%E8%A6%AA%E7%9D%9E)] | 
-[[GitHub](https://github.com/Weather-Shakespeare)] | 
-[[Blog](https://weather-shakespeare.github.io/)]</sup>
-        `,
-        },
-      ],
-    },
-    "teachingExperiences": {
-      "icon": PiBooks,
-      "title": "Teaching",
-      "items": [
-        {
-          "company": "National Central University",
-          "location": "Taoyuan, Taiwan",
-          "role": "Teaching Assistant",
-          "duration": "Feb. 2021 - Jun. 2024",
-          "tasksMarkdown": `
-- GS4538 Linux and Edge Computing, 24 Spring, Dr. Chia-Kai Chang <sup>[[Website](https://ncuedu.tw/course/linux)] | [[GitHub](https://github.com/NCU-GS4538-Linux)]</sup>
-- AP4064 Weather and Artificial Intelligence II, 24 Spring, Mr. Che-Wei Chou <sup>[[GitHub](https://github.com/weather-and-ai)]</sup>
-- AP4063 Weather and Artificial Intelligence I, 23 Fall, Mr. Che-Wei Chou <sup>[[GitHub](https://github.com/weather-and-ai)]</sup>
-- GS4719 Python Programming, 23 Fall, Dr. Chia-Kai Chang <sup>[[Website](https://ncuedu.tw/course/python)] | [[GitHub](https://github.com/NCU-GS4719-Python)]</sup>
-- Freshman English, 22 Fall & 23 Spring Dr. Chen, Jou-Yin
-- Student Service-Learning, 21 Spring, Prof. Wei-Yu Chang
-        `,
-        },
-      ],
-    },
-    "professionalExperiences": {
-      "icon": MdOutlineDevices,
-      "title": "Professional Experience",
-      "items": [
-        {
-          "company": "eCloudvalley Digital Technology",
-          "location": "New Taipei, Taiwan",
-          "role": "Cloud Engineer Intern",
-          "duration": "Mar. 2024 - May. 2024",
-          "tasksMarkdown": `
-- Led a team of 5 to enhance issue pools with AWS Bedrock, boosting cloud support efficiency by 80% through multi-language support and 95% accurate image recognition. Honored as the top-achieving internship team.
-- Utilized a serverless architecture on AWS Lambda, performing troubleshooting with CloudWatch, deployed via AWS CDK, and integrated with DynamoDB and Bedrock services.
-- Documented issues in 10+ mock cases, such as VPC entry failures, EC2 Apache server restarts, and S3 photo access problems, and provided detailed solutions for interns. Refer [here](https://github.com/1chooo/ecv-training-materials/tree/main/msp/aws_challenge) for a comprehensive list.
-          `,
-        },
-        {
-          "company": "Amazon Web Services",
-          "location": "Taipei, Taiwan",
-          "role": "Campus Ambassador",
-          "duration": "Aug. 2023 - Jan. 2024",
-          "tasksMarkdown": `
-- Educated 700+ cloud developers and achieved 96% user satisfaction by conducting 2 technical workshops, developing an open-source project, and 1 UAD with AWS cloud services. Refer [here](https://github.com/aws-educate-tw/aws-line-business-card-workshop) for the source code.
-- Conducted a comprehensive 35+ page market research study on cloud suppliers as part of an 11-member team.
-          `,
-        },
-        {
-          "company": "PEGATRON Corporation",
-          "location": "Taipei, Taiwan",
-          "role": "Software Engineer Intern",
-          "duration": "Jul. 2023 - Aug. 2023",
-          "tasksMarkdown": `
-- Executed a POC, adapting an LLM model for Smart Manufacturing, and was awarded Silver internship team.
-- Collaborated with a team of 5, utilized Git, a CI/CD pipeline, and followed an agile Scrum workflow.
-- Implemented Prompt Engineering and LangChain for the NVIDIA Ominerve visual robot, enabling seamless speech/text operation, boosting test support by 83% across 6-11 scenarios with 85% stability.
-          `,
-        },
-        {
-          "company": "National Central University",
-          "location": "Taoyuan, Taiwan",
-          "role": "Website Developer",
-          "duration": "Jul. 2022 - Jan. 2023",
-          "tasksMarkdown": `
-- Partnered with a team of 2 to develop a multi-user score management system for the Center for Teacher Education, reducing credit exemption processing time by 80% and remotely maintaining the server via SSH.
-          `,
-        },
-      ],
-    },
+      "educations": {
+        "icon": IoSchoolOutline,
+        "title": "Education",
+        "items": [
+          {
+            "company": "University of Helsinki",
+            "location": "Helsinki, Finland",
+            "role": "Master of Science in Computer Science (Networking)",
+            "duration": "Sep. 2023 — Jun. 2025",
+            tasksMarkdown: `
+___Full Scholarship Recipient___
+
+- **Key Courses:** Network Protocol Analysis, IoT Data Science, Network AI Systems, Computer Vision, Edge Intelligence & LLM
+            `
+          },
+          {
+            "company": "Jilin University",
+            "location": "Changchun, China",
+            "role": "Bachelor of Science in Computer Science",
+            "duration": "Sep. 2015 — Jun. 2019",
+            "tasksMarkdown": ``
+          }
+        ]
+      },
+      "professionalExperiences": {
+        "icon": MdOutlineDevices,
+        "title": "Professional Experience",
+        "items": [
+          {
+            "company": "Eficode, Fuji Team",
+            "location": "Helsinki, Finland",
+            "role": "Full Stack Developer Intern",
+            "duration": "Apr. 2024 - Sep. 2024",
+            tasksMarkdown: `
+- Developed and maintained a web accessibility monitoring project using Puppeteer and BullMQ for web scraping and task processing.
+- Designed and implemented WebSocket server deployment with distributed scaling in Kubernetes, handling timeout reconnections and backend service authentication.
+- Used Pulumi for Infrastructure as Code (IaC) to automate Azure resource provisioning and scaling, ensuring high availability and elasticity.
+- Gained expertise in WCAG (Web Content Accessibility Guidelines) compliance, implementing and testing WCAG 2 rules.
+            `
+          },
+          {
+            "company": "Inspur, Medical Data Platform Department",
+            "location": "Jinan, China",
+            "role": "Software Engineer",
+            "duration": "Aug. 2021 - Jun. 2023",
+            "tasksMarkdown": `
+- Developed key business interfaces, including contact tracing report submission and venue code scanning, using Kafka for load balancing to ensure system stability.
+- Optimized venue code system performance through horizontal partitioning, read-write separation, and cold-hot data separation.
+- Developed WeChat Mini Program and public account frontend, implementing login, scanning, and caching mechanisms for improved performance.
+            `
+          }
+        ]
+      },
+      "projectExperiences": {
+        "icon": PiTrophy,
+        "title": "Projects",
+        "items": [
+          {
+            "company": "Laundry Bot - Smart Laundry Booking System",
+            "location": "",
+            "role": "Inspired by the apartment's needs, I conceived, designed, and developed the entire system, with 80% user adoption and 30% active engagement",
+            "duration": "",
+            "tasksMarkdown": `
+- Designed and implemented a serverless laundry booking automation system using AWS Lambda, Apify, and CockroachDB for data collection, storage, and management.
+- Integrated OpenAI API for natural language interactions, enabling users to book, query, and manage reservations via a Telegram bot.
+- Leveraged AWS EventBridge for automated booking handling and S3 for raw data storage, implementing a multi-level notification system.
+            `
+          },
+          {
+            "company": "Edge-LLM - Edge LLM-driven Network Adaptive Optimization System",
+            "location": "",
+            "role": "Extended development from a course hackathon",
+            "duration": "",
+            "tasksMarkdown": `
+- Developed an adaptive distributed network system using edge devices, integrating federated learning and traffic optimization strategies to enhance communication efficiency.
+- Utilized TensorFlow Lite and MQTT for low-power edge model training and high-efficiency device communication.
+- Deployed lightweight LLM with LlamaFile to analyze traffic data and dynamically optimize hyperparameters for improved training efficiency.
+            `
+          }
+        ]
+      },
+      "skills": {
+        "icon": PiBooks,
+        "title": "Skills",
+        "items": [
+          {
+            "company": "Development Tech Stack",
+            "tasksMarkdown": `
+- **Backend:** Java, Python, Node.js, Spring Boot, Express
+- **Frontend:** TypeScript, JavaScript, React, Next.js, Vue.js, Tailwind CSS
+- **Tools:** Git, GitHub Actions, Bitbucket, Jenkins
+- **Cloud & Containerization:** Docker, Kubernetes, AWS, Azure (Azure Developer Associate Certified)
+        `
+          }
+        ]
+      }
   },
   "giscusConfig": {
     id: "comments",

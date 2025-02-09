@@ -4,6 +4,7 @@ import React from 'react';
 import { usePathname } from 'next/navigation';
 import config from '@/config';
 import { ProgressBarLink } from "@/components/progress-bar";
+import {useTranslations} from 'next-intl';
 
 import '@/styles/nav-bar.css'
 
@@ -11,6 +12,8 @@ const navItems = config.navItems;
 
 function NavBar() {
   const pathname = usePathname();
+  const t = useTranslations();
+  
 
   const isActive = (path: string) => {
     if (path === '/post' && pathname.startsWith('/post'))
@@ -29,7 +32,7 @@ function NavBar() {
               href={item.path}
               className={`navbar-link text-light-gray ${isActive(item.path) ? 'active' : ''}`}
             >
-              {item.label}
+              {t(item.label)}
             </ProgressBarLink>
           </li>
         ))}

@@ -2,9 +2,9 @@ import type { VCardIconType } from "@/types/config";
 
 export type Resume = {
   educations: Education;
-  awardLeaderships: AwardLeaderships;
-  teachingExperiences: TeachingExperience;
   professionalExperiences: ProfessionalExperience;
+  projectExperiences: ProjectExperience;
+  skills: Skill;
 };
 
 /**
@@ -32,30 +32,6 @@ export type Education = {
   }[];
 };
 
-export type AwardLeaderships = {
-  icon: VCardIconType;
-  title: string;
-  items: {
-    company: string;
-    location: string;
-    role: string;
-    duration: string;
-    tasksMarkdown: string;
-  }[];
-};
-
-export type TeachingExperience = {
-  icon: VCardIconType;
-  title: string;
-  items: {
-    company: string;
-    location: string;
-    role: string;
-    duration: string;
-    tasksMarkdown: string;
-  }[];
-};
-
 export type ProfessionalExperience = {
   icon: VCardIconType;
   title: string;
@@ -67,3 +43,24 @@ export type ProfessionalExperience = {
     tasksMarkdown: string;
   }[];
 };
+
+export type ProjectExperience = {
+  icon: VCardIconType;
+  title: string;
+  items: {
+    company: string;
+    location: string;
+    role: string;
+    duration: string;
+    tasksMarkdown: string;
+  }[];
+};
+
+export type Skill ={
+  icon: VCardIconType;
+  title: string;
+  items: {
+    company: string;
+    tasksMarkdown: string;
+  }[];
+}

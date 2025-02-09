@@ -4,28 +4,31 @@ import TimeLine from '@/components/resume/timeline';
 import PageHeader from '@/components/page-header';
 import config from '@/config';
 import DownloadCV from "@/components/resume/download-cv";
+import { getTranslations } from 'next-intl/server';
 
 const { title } = config;
 
 const { resume } = config;
 const { professionalExperiences } = resume;
 const { educations } = resume;
-const { awardLeaderships } = resume;
-const { teachingExperiences } = resume;
+const { projectExperiences } = resume;
+const { skills } = resume;
 
 export const metadata: Metadata = {
   title: `Resume | ${title}`,
 };
 
-function Resume() {
+async function Resume() {
+  const t = await getTranslations();
+
   return (
     <article>
-      <PageHeader header="Shu's Resume" />
+      <PageHeader header={t("resume.title")} />
       <DownloadCV />
-      <TimeLine data={professionalExperiences} />
       <TimeLine data={educations} />
-      <TimeLine data={awardLeaderships} />
-      <TimeLine data={teachingExperiences} />
+      <TimeLine data={professionalExperiences} />
+      <TimeLine data={projectExperiences} />
+      <TimeLine data={skills} />
     </article >
   );
 }
